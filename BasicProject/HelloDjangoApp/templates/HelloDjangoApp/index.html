@@ -1,3 +1,4 @@
+{% extends "HelloDjangoApp/layout.html" %}
 <html>
     <head>
         <title>{{ title }}</title>
@@ -5,6 +6,9 @@
         <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
     </head>
     <body>
+        {% block content %}
         <span class="message">{{ message }}</span>{{ content }}
+        {% endblock %} 
     </body>
+    <div><a href="about">About</a></div>
 </html>

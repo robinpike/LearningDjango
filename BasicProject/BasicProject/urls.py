@@ -18,5 +18,6 @@ import app.views
 #Djnago processes patterns in the order in which they appear in the array
 urlpatterns = [
     url(r'^$', HelloDjangoApp.views.index, name='index'),
+    url(r'^about$', HelloDjangoApp.views.about, name='about'),
     url(r'^$', app.views.home, name='home')
 ]
